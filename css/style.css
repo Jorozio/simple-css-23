@@ -1,0 +1,78 @@
+body{
+    background-color: rgb(213, 209, 194);
+    margin: 0;
+    /* these setting allign the content in the middle */
+    display: flex;
+    /* center horizontally */
+    align-items: center;
+    /* center vertically */
+    justify-content: center;
+    /* must specify height for vertical centering to work */
+    height: 100vh;
+}
+h4{
+    font-family: Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: rgb(49, 49, 49);
+    font-size: 18pt;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+#container{
+    /* this sets dimentions for the content */
+    width: 700px;
+    height: 600px;
+    background-color:rgb(221, 221, 221);
+    filter: drop-shadow(5px 5px 10px rgb(129, 129, 129));
+}
+#hero-image{
+    position: relative;
+    /* parent has relative position */
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+}
+
+#days-container{
+    /* uses flex to arrange days in a row */
+    display: flex;
+}
+img{
+    width: 700px;
+    height: 500px;
+    object-fit: cover;
+    /* this just makes sure the image fits within the #hero-image div */
+    
+}
+#city-text{
+    color: rgba(204, 213, 135, 0.892);
+    font-size: 60pt;
+    position: absolute;
+    /* this is the child using absolute positioning */
+    line-height: 40px;
+    left: 18px;
+    bottom: 33px;
+    margin: 0%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.day{
+    /* creates a box for each day */
+    width: 100px;
+    height: 100px;
+}
+.button:hover{
+    background-color: rgb(242, 242, 242);
+}
+.button:active{
+    background-color:rgb(204, 213, 135);
+}
+
+.weather-icon{
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    /* alternative to flex positioning */
+}
